@@ -1,4 +1,4 @@
- <reference types="cypress" />
+/// <reference types="cypress" />
 
 
 const clickByLabel = (label) => {
