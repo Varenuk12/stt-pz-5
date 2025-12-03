@@ -1,7 +1,6 @@
-/// <reference types="cypress" />
+ <reference types="cypress" />
 
-// Helper function to use cy.contains for digits and single-character operators 
-// that frequently fail with data-test selectors.
+
 const clickByLabel = (label) => {
   cy.contains('button', label).click();
 };
