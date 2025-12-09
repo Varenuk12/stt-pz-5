@@ -255,16 +255,6 @@ describe('Calculator Functionality Tests', () => {
     cy.get('[data-test="btn-equal"]').click();
     cy.get('[data-test="dashboard"]').should('have.value', '-20');
   });
-  
-});
-
-describe('Додаткові важливі кейси', () => {
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/');
-    cy.get('[data-test="btn-clr"]').click();
-    cy.clearLocalStorage();
-  });
-
   it('введення дуже довгого числа (20 цифр) — поле приймає всі введені цифри', () => {
     // Вводимо 20 раз цифру "1"
     for (let i = 0; i < 20; i++) {
